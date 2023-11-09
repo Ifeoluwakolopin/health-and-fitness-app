@@ -1,0 +1,81 @@
+digraph G {
+  fontname = "Helvetica,Arial,sans-serif"
+  node [fontname="Helvetica,Arial,sans-serif"]
+  edge [fontname="Helvetica,Arial,sans-serif"]
+
+  graph [rankdir=TB]
+  node [shape=plaintext]
+
+  users [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD COLSPAN="2" BGCOLOR="lightblue2"><B>Users</B></TD></TR>
+      <TR><TD>id (PK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>username</TD><TD>TEXT</TD></TR>
+      <TR><TD>age</TD><TD>INTEGER</TD></TR>
+      <TR><TD>gender</TD><TD>TEXT</TD></TR>
+      <TR><TD>height</TD><TD>REAL</TD></TR>
+      <TR><TD>weight</TD><TD>REAL</TD></TR>
+      <TR><TD>fitness_goals</TD><TD>TEXT</TD></TR>
+      <TR><TD>health_conditions</TD><TD>TEXT</TD></TR>
+    </TABLE>
+  >]
+
+  workouts [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD COLSPAN="2" BGCOLOR="lightblue2"><B>Workouts</B></TD></TR>
+      <TR><TD>id (PK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>user_id (FK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>date</TD><TD>DATE</TD></TR>
+      <TR><TD>time</TD><TD>TIME</TD></TR>
+      <TR><TD>workout_type</TD><TD>TEXT</TD></TR>
+      <TR><TD>duration</TD><TD>INTEGER</TD></TR>
+      <TR><TD>intensity</TD><TD>TEXT</TD></TR>
+      <TR><TD>calories_burned</TD><TD>INTEGER</TD></TR>
+    </TABLE>
+  >]
+
+  nutrition [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD COLSPAN="2" BGCOLOR="lightblue2"><B>Nutrition</B></TD></TR>
+      <TR><TD>id (PK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>user_id (FK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>date</TD><TD>DATE</TD></TR>
+      <TR><TD>time</TD><TD>TIME</TD></TR>
+      <TR><TD>food_item</TD><TD>TEXT</TD></TR>
+      <TR><TD>quantity</TD><TD>INTEGER</TD></TR>
+      <TR><TD>calories</TD><TD>INTEGER</TD></TR>
+      <TR><TD>macros</TD><TD>TEXT</TD></TR>
+    </TABLE>
+  >]
+
+  sleep [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD COLSPAN="2" BGCOLOR="lightblue2"><B>Sleep</B></TD></TR>
+      <TR><TD>id (PK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>user_id (FK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>date</TD><TD>DATE</TD></TR>
+      <TR><TD>sleep_duration</TD><TD>INTEGER</TD></TR>
+      <TR><TD>sleep_quality</TD><TD>INTEGER</TD></TR>
+      <TR><TD>wake_times</TD><TD>INTEGER</TD></TR>
+    </TABLE>
+  >]
+
+  health_metrics [label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+      <TR><TD COLSPAN="2" BGCOLOR="lightblue2"><B>Health Metrics</B></TD></TR>
+      <TR><TD>id (PK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>user_id (FK)</TD><TD>INTEGER</TD></TR>
+      <TR><TD>date</TD><TD>DATE</TD></TR>
+      <TR><TD>time</TD><TD>TIME</TD></TR>
+      <TR><TD>heart_rate</TD><TD>INTEGER</TD></TR>
+      <TR><TD>blood_pressure</TD><TD>TEXT</TD></TR>
+      <TR><TD>blood_sugar</TD><TD>INTEGER</TD></TR>
+      <TR><TD>cholesterol</TD><TD>INTEGER</TD></TR>
+    </TABLE>
+  >]
+
+  users -> workouts [label="1 - N"]
+  users -> nutrition [label="1 - N"]
+  users -> sleep [label="1 - N"]
+  users -> health_metrics [label="1 - N"]
+}

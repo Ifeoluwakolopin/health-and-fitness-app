@@ -1,15 +1,39 @@
-from models import User, Workout, Nutrition, Sleep, HealthMetric, session, engine
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from faker import Faker
 from tqdm import tqdm
 import random
 import json
 from typing import NoReturn
 
+# Assuming 'create.py' contains the declarative base and the User class definition
+from create import User, Base  # Import Base for metadata
+
 fake = Faker()
+
+# Set up the engine and create the database schema
+engine = create_engine("sqlite:///health_fitness_tracking.db")
+Base.metadata.create_all(engine)  # Create tables based on the models
+
+# Create a configured "Session" class
+Session = sessionmaker(bind=engine)
 
 
 def create_fake_data_orm(num_users: int = 10) -> NoReturn:
+    """
+    Populates the database with fake data for the number of users specified.
+
+    Parameters:
+    num_users (int): The number of fake users to create.
+
+    Returns:
+    NoReturn
+    """
+    # Instantiate a session
+    session = Session()
     users = []
+
+    # Generate fake users
     for _ in tqdm(range(num_users), desc="Creating Users"):
         user = User(
             username=fake.user_name(),
@@ -24,6 +48,7 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
         )
         users.append(user)
 
+    # Add all users to the session and commit
     session.add_all(users)
     session.commit()
 
