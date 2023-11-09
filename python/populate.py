@@ -1,14 +1,16 @@
 from models import User, Workout, Nutrition, Sleep, HealthMetric, session, engine
 from faker import Faker
+from tqdm import tqdm
 import random
-from datetime import timedelta, datetime
+import json
+from typing import NoReturn
 
 fake = Faker()
 
 
-def create_fake_data_orm(num_users=10):
+def create_fake_data_orm(num_users: int = 10) -> NoReturn:
     users = []
-    for _ in range(num_users):
+    for _ in tqdm(range(num_users), desc="Creating Users"):
         user = User(
             username=fake.user_name(),
             age=random.randint(18, 80),
@@ -16,8 +18,8 @@ def create_fake_data_orm(num_users=10):
             height=round(random.uniform(150.0, 200.0), 2),
             weight=round(random.uniform(50.0, 120.0), 2),
             fitness_goals=fake.sentence(),
-            health_conditions=fake.word(
-                ext_word_list=["None", "Diabetes", "Hypertension", "Asthma"]
+            health_conditions=random.choice(
+                ["None", "Diabetes", "Hypertension", "Asthma"]
             ),
         )
         users.append(user)
@@ -25,13 +27,11 @@ def create_fake_data_orm(num_users=10):
     session.add_all(users)
     session.commit()
 
-    for user in users:
-        # Create random workouts
-        for _ in range(random.randint(5, 20)):  # Random number of workouts
-            date = fake.date_between(start_date="-1y", end_date="today")
-            workout = Workout(
-                user_id=user.id,
-                date=date,
+    for user in tqdm(users, desc="Populating Data for Users"):
+        # Workouts
+        for _ in range(random.randint(5, 20)):
+            user.log_workout(
+                date=fake.date_between(start_date="-1y", end_date="today"),
                 time=fake.time(),
                 workout_type=fake.word(
                     ext_word_list=[
@@ -42,16 +42,14 @@ def create_fake_data_orm(num_users=10):
                         "Weightlifting",
                     ]
                 ),
-                duration=random.randint(20, 120),  # Duration in minutes
+                duration=random.randint(20, 120),
                 intensity=random.choice(["Low", "Medium", "High"]),
                 calories_burned=random.randint(100, 700),
             )
-            session.add(workout)
 
-        # Create random nutrition logs
-        for _ in range(random.randint(10, 30)):  # Random number of meals
-            nutrition = Nutrition(
-                user_id=user.id,
+        # Nutrition logs
+        for _ in range(random.randint(10, 30)):
+            user.record_nutrition(
                 date=fake.date_between(start_date="-1y", end_date="today"),
                 time=fake.time(),
                 food_item=fake.word(
@@ -72,23 +70,19 @@ def create_fake_data_orm(num_users=10):
                     }
                 ),
             )
-            session.add(nutrition)
 
-        # Create random sleep records
-        for _ in range(random.randint(50, 100)):  # Random number of sleep records
-            sleep = Sleep(
-                user_id=user.id,
+        # Sleep records
+        for _ in range(random.randint(50, 100)):
+            user.enter_sleep_data(
                 date=fake.date_between(start_date="-1y", end_date="today"),
-                sleep_duration=random.randint(300, 480),  # Duration in minutes
+                sleep_duration=random.randint(300, 480),
                 sleep_quality=random.randint(1, 10),
                 wake_times=random.randint(0, 5),
             )
-            session.add(sleep)
 
-        # Create random health metrics
-        for _ in range(random.randint(10, 30)):  # Random number of health metrics
-            health_metric = HealthMetric(
-                user_id=user.id,
+        # Health metrics
+        for _ in range(random.randint(10, 30)):
+            user.add_health_metric(
                 date=fake.date_between(start_date="-1y", end_date="today"),
                 time=fake.time(),
                 heart_rate=random.randint(60, 100),
@@ -96,9 +90,6 @@ def create_fake_data_orm(num_users=10):
                 blood_sugar=random.randint(70, 140),
                 cholesterol=random.randint(100, 200),
             )
-            session.add(health_metric)
-
-    session.commit()
 
 
 create_fake_data_orm(10)

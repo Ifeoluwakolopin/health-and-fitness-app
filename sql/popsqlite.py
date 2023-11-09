@@ -1,18 +1,18 @@
 import sqlite3
 import json
 from faker import Faker
+from tqdm import tqdm
 import random
-from datetime import timedelta, datetime
+from typing import NoReturn
 
 fake = Faker()
 
-conn = sqlite3.connect("health_fitness_tracking.db")
-c = conn.cursor()
 
+def create_fake_data_sqlite(conn: sqlite3.Connection, num_users: int = 10) -> NoReturn:
+    c = conn.cursor()
 
-def create_fake_data_sqlite(num_users=10):
     # Insert fake users
-    for _ in range(num_users):
+    for _ in tqdm(range(num_users), desc="Creating Users"):
         c.execute(
             "INSERT INTO users (username, age, gender, height, weight, fitness_goals, health_conditions) VALUES (?, ?, ?, ?, ?, ?, ?)",
             (
@@ -22,7 +22,7 @@ def create_fake_data_sqlite(num_users=10):
                 round(random.uniform(150.0, 200.0), 2),
                 round(random.uniform(50.0, 120.0), 2),
                 fake.sentence(),
-                fake.word(ext_word_list=["None", "Diabetes", "Hypertension", "Asthma"]),
+                random.choice(["None", "Diabetes", "Hypertension", "Asthma"]),
             ),
         )
     conn.commit()
@@ -31,8 +31,8 @@ def create_fake_data_sqlite(num_users=10):
     c.execute("SELECT id FROM users")
     user_ids = [row[0] for row in c.fetchall()]
 
-    for user_id in user_ids:
-        # Insert fake workouts
+    for user_id in tqdm(user_ids, desc="Populating Data for Users"):
+        # Workouts
         for _ in range(random.randint(5, 20)):
             c.execute(
                 "INSERT INTO workouts (user_id, date, time, workout_type, duration, intensity, calories_burned) VALUES (?, ?, ?, ?, ?, ?, ?)",
@@ -55,7 +55,7 @@ def create_fake_data_sqlite(num_users=10):
                 ),
             )
 
-        # Insert fake nutrition logs
+        # Nutrition logs
         for _ in range(random.randint(10, 30)):
             c.execute(
                 "INSERT INTO nutrition (user_id, date, time, food_item, quantity, calories, macros) VALUES (?, ?, ?, ?, ?, ?, ?)",
@@ -83,7 +83,7 @@ def create_fake_data_sqlite(num_users=10):
                 ),
             )
 
-        # Insert fake sleep records
+        # Sleep records
         for _ in range(random.randint(50, 100)):
             c.execute(
                 "INSERT INTO sleep (user_id, date, sleep_duration, sleep_quality, wake_times) VALUES (?, ?, ?, ?, ?)",
@@ -96,7 +96,7 @@ def create_fake_data_sqlite(num_users=10):
                 ),
             )
 
-        # Insert fake health metrics
+        # Health metrics
         for _ in range(random.randint(10, 30)):
             c.execute(
                 "INSERT INTO health_metrics (user_id, date, time, heart_rate, blood_pressure, blood_sugar, cholesterol) VALUES (?, ?, ?, ?, ?, ?, ?)",
@@ -114,5 +114,7 @@ def create_fake_data_sqlite(num_users=10):
     conn.commit()
 
 
-create_fake_data_sqlite(10)
+# Connect to SQLite database
+conn = sqlite3.connect("health_fitness_tracking.db")
+create_fake_data_sqlite(conn, 10)
 conn.close()
