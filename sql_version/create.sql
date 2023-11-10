@@ -1,5 +1,5 @@
 -- Users Table
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT NOT NULL,
     age INTEGER,
@@ -11,7 +11,7 @@ CREATE TABLE users (
 );
 
 -- Workouts Table
-CREATE TABLE workouts (
+CREATE TABLE IF NOT EXISTS workouts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     date DATE,
@@ -24,7 +24,7 @@ CREATE TABLE workouts (
 );
 
 -- Nutrition Table
-CREATE TABLE nutrition (
+CREATE TABLE IF NOT EXISTS nutrition (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     date DATE,
@@ -37,7 +37,7 @@ CREATE TABLE nutrition (
 );
 
 -- Sleep Table
-CREATE TABLE sleep (
+CREATE TABLE IF NOT EXISTS sleep (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     date DATE,
@@ -48,7 +48,7 @@ CREATE TABLE sleep (
 );
 
 -- Health Metrics Table
-CREATE TABLE health_metrics (
+CREATE TABLE IF NOT EXISTS health_metrics (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     date DATE,
@@ -63,12 +63,12 @@ CREATE TABLE health_metrics (
 -- Indexes
 
 -- Create an index on the username column in the users table
-CREATE INDEX idx_username ON users(username);
+CREATE INDEX IF NOT EXISTS idx_username ON users(username);
 
--- Create an index on the user_id column in the workouts table
-CREATE INDEX idx_workouts_user_id ON workouts(user_id);
+-- Create an index on the user_id column in the workouts table if it does not exist
+CREATE INDEX IF NOT EXISTS idx_workouts_user_id ON workouts(user_id);
 
 -- Repeat for other tables and foreign key columns as necessary
-CREATE INDEX idx_nutrition_user_id ON nutrition(user_id);
-CREATE INDEX idx_sleep_user_id ON sleep(user_id);
-CREATE INDEX idx_health_metrics_user_id ON health_metrics(user_id);
+CREATE INDEX IF NOT EXISTS idx_nutrition_user_id ON nutrition(user_id);
+CREATE INDEX IF NOT EXISTS idx_sleep_user_id ON sleep(user_id);
+CREATE INDEX IF NOT EXISTS idx_health_metrics_user_id ON health_metrics(user_id);
