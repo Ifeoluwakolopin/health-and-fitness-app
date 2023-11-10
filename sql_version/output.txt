@@ -1,0 +1,493 @@
+question                               date        workout_type   duration  intensity  calories_burned
+-------------------------------------  ----------  -------------  --------  ---------  ---------------
+Workout history for user: JaneDoe      2023-11-09  Cycling        45        Moderate   400            
+Workout history for user: JaneDoe      2023-11-09  Cycling        45        Moderate   400            
+Workout history for user: deborahwood  2023-09-22  Swimming       60        Low        565            
+Workout history for user: deborahwood  2023-09-19  Running        40        Medium     242            
+Workout history for user: deborahwood  2023-09-13  Swimming       82        Medium     693            
+Workout history for user: deborahwood  2023-09-09  Swimming       81        Low        183            
+Workout history for user: deborahwood  2023-08-07  Yoga           66        Medium     322            
+Workout history for user: deborahwood  2023-07-10  Yoga           75        Low        307            
+Workout history for user: deborahwood  2023-06-30  Running        71        Low        654            
+Workout history for user: deborahwood  2023-06-29  Running        57        Low        443            
+Workout history for user: deborahwood  2023-06-24  Yoga           37        High       329            
+Workout history for user: deborahwood  2023-05-02  Weightlifting  56        Low        308            
+Workout history for user: deborahwood  2023-04-26  Swimming       62        Low        267            
+Workout history for user: deborahwood  2023-04-21  Cycling        67        Low        582            
+Workout history for user: deborahwood  2023-04-17  Weightlifting  60        Low        518            
+Workout history for user: deborahwood  2022-12-28  Weightlifting  89        High       137            
+Workout history for user: deborahwood  2022-12-26  Swimming       96        Low        669            
+Workout history for user: deborahwood  2022-12-23  Running        73        Medium     688            
+Workout history for user: deborahwood  2022-12-05  Swimming       85        Medium     683            
+Workout history for user: donald43     2023-10-21  Weightlifting  110       Medium     206            
+Workout history for user: donald43     2023-08-31  Running        106       Low        575            
+Workout history for user: donald43     2023-07-28  Swimming       87        Medium     649            
+Workout history for user: donald43     2023-07-14  Weightlifting  54        Medium     693            
+Workout history for user: donald43     2023-06-05  Yoga           42        Medium     590            
+Workout history for user: donald43     2023-05-23  Cycling        119       Low        528            
+Workout history for user: donald43     2023-04-25  Yoga           30        Low        218            
+Workout history for user: donald43     2023-04-24  Yoga           79        Low        348            
+Workout history for user: donald43     2023-03-15  Running        111       High       267            
+Workout history for user: donald43     2023-03-06  Weightlifting  106       Medium     190            
+Workout history for user: donald43     2023-03-06  Yoga           86        Low        625            
+Workout history for user: donald43     2023-02-24  Yoga           82        Medium     551            
+Workout history for user: donald43     2023-02-04  Running        43        Medium     136            
+Workout history for user: donald43     2023-01-25  Cycling        98        High       202            
+Workout history for user: donald43     2023-01-14  Cycling        82        High       270            
+Workout history for user: donald43     2023-01-12  Running        99        Low        294            
+Workout history for user: donald43     2022-12-28  Weightlifting  102       Low        399            
+Workout history for user: donald43     2022-12-02  Yoga           85        Medium     119            
+Workout history for user: donald43     2022-11-16  Running        101       Low        515            
+Workout history for user: donald43     2022-11-12  Running        82        Low        542            
+Workout history for user: hooverjason  2023-09-27  Weightlifting  43        Low        396            
+Workout history for user: hooverjason  2023-09-12  Running        93        Medium     215            
+Workout history for user: hooverjason  2023-07-28  Yoga           29        High       191            
+Workout history for user: hooverjason  2023-07-05  Yoga           104       High       164            
+Workout history for user: hooverjason  2023-06-20  Weightlifting  119       Medium     319            
+Workout history for user: hooverjason  2023-06-17  Running        109       Low        270            
+Workout history for user: hooverjason  2023-06-08  Cycling        42        Low        592            
+Workout history for user: hooverjason  2023-04-21  Swimming       38        High       474            
+Workout history for user: hooverjason  2023-04-16  Running        112       Low        497            
+Workout history for user: hooverjason  2023-04-04  Weightlifting  113       Low        143            
+Workout history for user: hooverjason  2023-03-02  Yoga           51        Medium     514            
+Workout history for user: hooverjason  2023-02-19  Yoga           34        Low        539            
+Workout history for user: hooverjason  2023-01-29  Swimming       53        Medium     687            
+Workout history for user: icollins     2023-11-05  Swimming       75        High       668            
+Workout history for user: icollins     2023-10-06  Swimming       105       High       572            
+Workout history for user: icollins     2023-09-17  Running        49        High       238            
+Workout history for user: icollins     2023-09-16  Weightlifting  106       Low        140            
+Workout history for user: icollins     2023-07-25  Running        51        Low        451            
+Workout history for user: icollins     2023-07-25  Swimming       99        Low        425            
+Workout history for user: icollins     2023-07-18  Weightlifting  25        Low        157            
+Workout history for user: icollins     2023-06-27  Running        106       Medium     497            
+Workout history for user: icollins     2023-06-12  Running        40        Medium     272            
+Workout history for user: icollins     2023-06-07  Cycling        66        Medium     191            
+Workout history for user: icollins     2023-04-25  Swimming       95        Medium     478            
+Workout history for user: icollins     2023-04-17  Swimming       75        High       128            
+Workout history for user: icollins     2023-03-29  Running        66        Medium     237            
+Workout history for user: icollins     2023-03-15  Yoga           120       Medium     477            
+Workout history for user: icollins     2023-03-05  Running        65        High       115            
+Workout history for user: icollins     2022-12-27  Yoga           70        Medium     491            
+Workout history for user: icollins     2022-12-17  Weightlifting  85        High       251            
+Workout history for user: icollins     2022-12-14  Swimming       42        High       159            
+Workout history for user: jack52       2023-09-30  Swimming       102       Low        266            
+Workout history for user: jack52       2023-09-27  Cycling        74        Low        120            
+Workout history for user: jack52       2023-08-29  Weightlifting  99        High       660            
+Workout history for user: jack52       2023-08-07  Weightlifting  34        Medium     460            
+Workout history for user: jack52       2023-07-08  Weightlifting  48        Low        515            
+Workout history for user: jack52       2023-07-01  Yoga           29        Low        383            
+Workout history for user: jack52       2023-05-27  Cycling        72        Low        460            
+Workout history for user: jack52       2023-04-22  Weightlifting  89        Low        388            
+Workout history for user: jack52       2023-01-22  Weightlifting  74        High       365            
+Workout history for user: jack52       2023-01-08  Dance          60        High       300            
+Workout history for user: jack52       2023-01-07  Pilates        50        Medium     180            
+Workout history for user: jack52       2022-11-26  Swimming       53        Medium     360            
+Workout history for user: jeremy87     2023-11-06  Cycling        62        Low        380            
+Workout history for user: jeremy87     2023-11-05  Running        118       Medium     252            
+Workout history for user: jeremy87     2023-11-03  Cycling        74        Low        280            
+Workout history for user: jeremy87     2023-10-01  Swimming       97        Low        649            
+Workout history for user: jeremy87     2023-09-07  Swimming       24        High       262            
+Workout history for user: jeremy87     2023-08-12  Weightlifting  97        Low        665            
+Workout history for user: jeremy87     2023-06-28  Weightlifting  82        Low        691            
+Workout history for user: jeremy87     2023-06-15  Cycling        100       Low        271            
+Workout history for user: jeremy87     2023-05-26  Cycling        40        Medium     685            
+Workout history for user: jeremy87     2023-05-02  Cycling        105       Medium     126            
+Workout history for user: jeremy87     2023-01-06  Boxing         45        High       450            
+Workout history for user: jeremy87     2023-01-05  Gym            60        High       500            
+Workout history for user: jeremy87     2022-12-31  Running        64        High       669            
+Workout history for user: jeremy87     2022-12-26  Weightlifting  88        Medium     698            
+Workout history for user: jeremy87     2022-12-17  Swimming       30        High       629            
+Workout history for user: jeremy87     2022-11-27  Weightlifting  98        Medium     428            
+Workout history for user: jonesthomas  2023-11-01  Running        87        Low        301            
+Workout history for user: jonesthomas  2023-08-22  Running        42        Medium     282            
+Workout history for user: jonesthomas  2023-07-01  Running        68        Medium     216            
+Workout history for user: jonesthomas  2023-04-18  Running        23        Medium     176            
+Workout history for user: jonesthomas  2023-03-30  Yoga           68        Low        654            
+Workout history for user: jonesthomas  2023-03-01  Yoga           89        Low        140            
+Workout history for user: jonesthomas  2022-12-21  Swimming       26        High       216            
+Workout history for user: lewissamuel  2023-10-12  Weightlifting  108       Low        315            
+Workout history for user: lewissamuel  2023-09-03  Weightlifting  92        Low        156            
+Workout history for user: lewissamuel  2023-08-04  Swimming       65        High       577            
+Workout history for user: lewissamuel  2023-07-13  Cycling        65        Low        599            
+Workout history for user: lewissamuel  2023-05-06  Running        48        Low        689            
+Workout history for user: lewissamuel  2023-04-28  Running        28        Medium     207            
+Workout history for user: lewissamuel  2023-04-15  Yoga           110       High       490            
+Workout history for user: lewissamuel  2023-04-12  Running        92        High       336            
+Workout history for user: lewissamuel  2023-03-21  Cycling        24        High       414            
+Workout history for user: lewissamuel  2023-03-06  Cycling        65        High       389            
+Workout history for user: lewissamuel  2023-03-04  Cycling        98        High       198            
+Workout history for user: lewissamuel  2023-01-29  Cycling        77        Medium     326            
+Workout history for user: lewissamuel  2023-01-04  Yoga           40        Low        100            
+Workout history for user: lewissamuel  2023-01-03  Cycling        45        Low        200            
+Workout history for user: lewissamuel  2022-12-26  Cycling        81        Medium     678            
+Workout history for user: lewissamuel  2022-12-25  Running        101       Medium     687            
+Workout history for user: lewissamuel  2022-11-26  Yoga           78        Medium     330            
+Workout history for user: lewissamuel  2022-11-17  Running        86        Medium     694            
+Workout history for user: william54    2023-10-16  Swimming       35        Medium     268            
+Workout history for user: william54    2023-09-27  Cycling        101       Medium     393            
+Workout history for user: william54    2023-09-06  Running        33        Low        317            
+Workout history for user: william54    2023-09-04  Cycling        28        Medium     377            
+Workout history for user: william54    2023-06-15  Cycling        102       Low        504            
+Workout history for user: william54    2023-05-07  Swimming       72        Medium     384            
+Workout history for user: william54    2023-04-23  Yoga           66        Low        136            
+Workout history for user: william54    2023-04-20  Swimming       37        Low        373            
+Workout history for user: william54    2023-04-09  Yoga           116       Low        456            
+Workout history for user: william54    2023-03-18  Cycling        83        Low        299            
+Workout history for user: william54    2023-03-17  Running        118       Medium     471            
+Workout history for user: william54    2023-01-10  HIIT           30        High       350            
+Workout history for user: william54    2023-01-09  Rowing         70        Medium     400            
+Workout history for user: william54    2023-01-05  Yoga           50        High       625            
+Workout history for user: william54    2022-12-12  Swimming       21        Low        585            
+Workout history for user: william54    2022-12-01  Cycling        91        Medium     235            
+Workout history for user: william54    2022-11-29  Swimming       52        High       372            
+Workout history for user: william54    2022-11-10  Yoga           45        Low        344            
+Workout history for user: william54    2022-11-08  Weightlifting  74        High       614            
+Workout history for user: wluna        2023-11-02  Weightlifting  66        Medium     333            
+Workout history for user: wluna        2023-10-14  Running        46        Medium     294            
+Workout history for user: wluna        2023-08-24  Cycling        84        High       177            
+Workout history for user: wluna        2023-08-07  Yoga           90        High       244            
+Workout history for user: wluna        2023-07-26  Swimming       34        High       157            
+Workout history for user: wluna        2023-05-10  Yoga           62        High       597            
+Workout history for user: wluna        2023-05-10  Running        99        High       442            
+Workout history for user: wluna        2023-03-11  Yoga           28        Medium     570            
+Workout history for user: wluna        2023-03-02  Cycling        57        High       439            
+Workout history for user: wluna        2023-01-31  Weightlifting  64        High       460            
+Workout history for user: wluna        2023-01-14  Swimming       38        High       442            
+Workout history for user: wluna        2023-01-06  Running        45        Low        451            
+Workout history for user: wluna        2023-01-02  Swimming       60        Medium     250            
+Workout history for user: wluna        2023-01-01  Running        30        High       300            
+Workout history for user: wluna        2022-11-11  Swimming       80        Medium     275            
+question                                                 date        daily_calories
+-------------------------------------------------------  ----------  --------------
+Caloric intake over the past 7 days for user: JaneDoe    2023-11-09  1000          
+Caloric intake over the past 7 days for user: donald43   2023-11-07  348           
+Caloric intake over the past 7 days for user: william54  2023-11-06  319           
+question                                                   date        average_quality
+---------------------------------------------------------  ----------  ---------------
+Sleep quality over the past 30 days for user: JaneDoe      2023-11-08  7.0            
+Sleep quality over the past 30 days for user: deborahwood  2023-11-04  5.0            
+Sleep quality over the past 30 days for user: deborahwood  2023-10-31  6.0            
+Sleep quality over the past 30 days for user: deborahwood  2023-10-22  7.0            
+Sleep quality over the past 30 days for user: deborahwood  2023-10-14  2.0            
+Sleep quality over the past 30 days for user: donald43     2023-11-06  10.0           
+Sleep quality over the past 30 days for user: donald43     2023-10-19  10.0           
+Sleep quality over the past 30 days for user: donald43     2023-10-16  9.0            
+Sleep quality over the past 30 days for user: hooverjason  2023-10-26  6.5            
+Sleep quality over the past 30 days for user: hooverjason  2023-10-16  10.0           
+Sleep quality over the past 30 days for user: hooverjason  2023-10-15  1.0            
+Sleep quality over the past 30 days for user: hooverjason  2023-10-12  10.0           
+Sleep quality over the past 30 days for user: icollins     2023-11-08  8.0            
+Sleep quality over the past 30 days for user: icollins     2023-11-03  6.0            
+Sleep quality over the past 30 days for user: icollins     2023-10-30  1.0            
+Sleep quality over the past 30 days for user: icollins     2023-10-21  7.0            
+Sleep quality over the past 30 days for user: icollins     2023-10-20  5.0            
+Sleep quality over the past 30 days for user: icollins     2023-10-16  7.0            
+Sleep quality over the past 30 days for user: icollins     2023-10-15  10.0           
+Sleep quality over the past 30 days for user: icollins     2023-10-13  7.0            
+Sleep quality over the past 30 days for user: jack52       2023-11-07  4.0            
+Sleep quality over the past 30 days for user: jack52       2023-10-28  3.0            
+Sleep quality over the past 30 days for user: jack52       2023-10-13  7.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-11-07  5.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-10-30  3.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-10-23  7.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-10-14  9.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-10-13  8.0            
+Sleep quality over the past 30 days for user: jeremy87     2023-10-12  4.0            
+Sleep quality over the past 30 days for user: jonesthomas  2023-11-02  1.0            
+Sleep quality over the past 30 days for user: jonesthomas  2023-10-23  5.0            
+Sleep quality over the past 30 days for user: jonesthomas  2023-10-22  7.0            
+Sleep quality over the past 30 days for user: jonesthomas  2023-10-14  1.0            
+Sleep quality over the past 30 days for user: jonesthomas  2023-10-13  10.0           
+Sleep quality over the past 30 days for user: lewissamuel  2023-11-06  2.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-11-05  10.0           
+Sleep quality over the past 30 days for user: lewissamuel  2023-11-04  10.0           
+Sleep quality over the past 30 days for user: lewissamuel  2023-11-03  9.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-30  2.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-28  9.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-26  6.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-25  7.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-24  7.0            
+Sleep quality over the past 30 days for user: lewissamuel  2023-10-16  4.0            
+Sleep quality over the past 30 days for user: william54    2023-11-08  8.0            
+Sleep quality over the past 30 days for user: william54    2023-11-07  8.0            
+Sleep quality over the past 30 days for user: william54    2023-11-04  10.0           
+Sleep quality over the past 30 days for user: william54    2023-11-02  10.0           
+Sleep quality over the past 30 days for user: william54    2023-10-30  3.0            
+Sleep quality over the past 30 days for user: william54    2023-10-22  8.0            
+Sleep quality over the past 30 days for user: william54    2023-10-17  1.0            
+Sleep quality over the past 30 days for user: wluna        2023-11-06  6.0            
+Sleep quality over the past 30 days for user: wluna        2023-11-05  6.0            
+Sleep quality over the past 30 days for user: wluna        2023-11-02  8.0            
+Sleep quality over the past 30 days for user: wluna        2023-10-31  3.0            
+Sleep quality over the past 30 days for user: wluna        2023-10-14  8.0            
+question                                           date        heart_rate  blood_pressure  blood_sugar  cholesterol
+-------------------------------------------------  ----------  ----------  --------------  -----------  -----------
+Latest health metric record for user: JaneDoe      2023-11-09  72          115/75          85           190        
+Latest health metric record for user: JaneDoe      2023-11-09  72          115/75          85           190        
+Latest health metric record for user: deborahwood  2023-11-07  80          133/90          74           198        
+Latest health metric record for user: donald43     2023-10-18  62          108/69          136          156        
+Latest health metric record for user: hooverjason  2023-10-22  79          106/90          113          167        
+Latest health metric record for user: icollins     2023-10-19  83          112/76          127          105        
+Latest health metric record for user: jack52       2023-11-06  88          139/87          71           199        
+Latest health metric record for user: jeremy87     2023-10-02  61          137/60          89           195        
+Latest health metric record for user: jonesthomas  2023-10-31  64          119/69          85           108        
+Latest health metric record for user: lewissamuel  2023-10-12  86          138/88          108          129        
+Latest health metric record for user: william54    2023-10-14  93          119/60          74           192        
+Latest health metric record for user: wluna        2023-10-15  94          130/76          103          158        
+question                                                      username  max_calories
+------------------------------------------------------------  --------  ------------
+User who burned the most calories in a single workout sessio  jeremy87  698         
+n:                                                                                  
+question                                                      average_sleep_duration
+------------------------------------------------------------  ----------------------
+Average sleep duration for the past week for user: jeremy87   461.0                 
+
+Average sleep duration for the past week for user: deborahwo  426.0                 
+od                                                                                  
+
+Average sleep duration for the past week for user: JaneDoe    420.0                 
+
+Average sleep duration for the past week for user: icollins   411.0                 
+
+Average sleep duration for the past week for user: william54  402.333333333333      
+
+Average sleep duration for the past week for user: lewissamu  378.0                 
+el                                                                                  
+
+Average sleep duration for the past week for user: wluna      363.0                 
+
+Average sleep duration for the past week for user: donald43   351.0                 
+
+Average sleep duration for the past week for user: jack52     340.0                 
+question                                                      username  average_heart_rate
+------------------------------------------------------------  --------  ------------------
+User with the highest average heart rate in health metrics:   icollins  82.6428571428571  
+question                                          username  avg_duration
+------------------------------------------------  --------  ------------
+User with the highest average workout duration:   donald43  85.2        
+question                     workout_type  count
+---------------------------  ------------  -----
+Most popular workout type:   Running       36   
+question                                               avg_calories_per_meal
+-----------------------------------------------------  ---------------------
+Average caloric intake per meal for user: jonesthomas  410.9                
+Average caloric intake per meal for user: hooverjason  334.083333333333     
+Average caloric intake per meal for user: william54    304.642857142857     
+Average caloric intake per meal for user: deborahwood  291.266666666667     
+Average caloric intake per meal for user: wluna        284.947368421053     
+Average caloric intake per meal for user: icollins     278.1875             
+Average caloric intake per meal for user: jack52       271.8                
+Average caloric intake per meal for user: jeremy87     266.416666666667     
+Average caloric intake per meal for user: JaneDoe      250.0                
+Average caloric intake per meal for user: donald43     248.2                
+Average caloric intake per meal for user: lewissamuel  247.833333333333     
+question                                  day_of_week  workout_count
+----------------------------------------  -----------  -------------
+Day of the week with the most workouts:   6            28           
+question                                                      personal_best_calories
+------------------------------------------------------------  ----------------------
+Personal best for calories burned in a workout by user: jere  698                   
+my87                                                                                
+
+Personal best for calories burned in a workout by user: lewi  694                   
+ssamuel                                                                             
+
+Personal best for calories burned in a workout by user: debo  693                   
+rahwood                                                                             
+
+Personal best for calories burned in a workout by user: dona  693                   
+ld43                                                                                
+
+Personal best for calories burned in a workout by user: hoov  687                   
+erjason                                                                             
+
+Personal best for calories burned in a workout by user: icol  668                   
+lins                                                                                
+
+Personal best for calories burned in a workout by user: jack  660                   
+52                                                                                  
+
+Personal best for calories burned in a workout by user: jone  654                   
+sthomas                                                                             
+
+Personal best for calories burned in a workout by user: will  625                   
+iam54                                                                               
+
+Personal best for calories burned in a workout by user: wlun  597                   
+a                                                                                   
+
+Personal best for calories burned in a workout by user: Jane  400                   
+Doe                                                                                 
+question                                       date        intensity
+---------------------------------------------  ----------  ---------
+Workout intensity trend for user: JaneDoe      2023-11-09  Moderate 
+Workout intensity trend for user: JaneDoe      2023-11-09  Moderate 
+Workout intensity trend for user: deborahwood  2022-12-05  Medium   
+Workout intensity trend for user: deborahwood  2022-12-23  Medium   
+Workout intensity trend for user: deborahwood  2022-12-26  Low      
+Workout intensity trend for user: deborahwood  2022-12-28  High     
+Workout intensity trend for user: deborahwood  2023-04-17  Low      
+Workout intensity trend for user: deborahwood  2023-04-21  Low      
+Workout intensity trend for user: deborahwood  2023-04-26  Low      
+Workout intensity trend for user: deborahwood  2023-05-02  Low      
+Workout intensity trend for user: deborahwood  2023-06-24  High     
+Workout intensity trend for user: deborahwood  2023-06-29  Low      
+Workout intensity trend for user: deborahwood  2023-06-30  Low      
+Workout intensity trend for user: deborahwood  2023-07-10  Low      
+Workout intensity trend for user: deborahwood  2023-08-07  Medium   
+Workout intensity trend for user: deborahwood  2023-09-09  Low      
+Workout intensity trend for user: deborahwood  2023-09-13  Medium   
+Workout intensity trend for user: deborahwood  2023-09-19  Medium   
+Workout intensity trend for user: deborahwood  2023-09-22  Low      
+Workout intensity trend for user: donald43     2022-11-12  Low      
+Workout intensity trend for user: donald43     2022-11-16  Low      
+Workout intensity trend for user: donald43     2022-12-02  Medium   
+Workout intensity trend for user: donald43     2022-12-28  Low      
+Workout intensity trend for user: donald43     2023-01-12  Low      
+Workout intensity trend for user: donald43     2023-01-14  High     
+Workout intensity trend for user: donald43     2023-01-25  High     
+Workout intensity trend for user: donald43     2023-02-04  Medium   
+Workout intensity trend for user: donald43     2023-02-24  Medium   
+Workout intensity trend for user: donald43     2023-03-06  Medium   
+Workout intensity trend for user: donald43     2023-03-06  Low      
+Workout intensity trend for user: donald43     2023-03-15  High     
+Workout intensity trend for user: donald43     2023-04-24  Low      
+Workout intensity trend for user: donald43     2023-04-25  Low      
+Workout intensity trend for user: donald43     2023-05-23  Low      
+Workout intensity trend for user: donald43     2023-06-05  Medium   
+Workout intensity trend for user: donald43     2023-07-14  Medium   
+Workout intensity trend for user: donald43     2023-07-28  Medium   
+Workout intensity trend for user: donald43     2023-08-31  Low      
+Workout intensity trend for user: donald43     2023-10-21  Medium   
+Workout intensity trend for user: hooverjason  2023-01-29  Medium   
+Workout intensity trend for user: hooverjason  2023-02-19  Low      
+Workout intensity trend for user: hooverjason  2023-03-02  Medium   
+Workout intensity trend for user: hooverjason  2023-04-04  Low      
+Workout intensity trend for user: hooverjason  2023-04-16  Low      
+Workout intensity trend for user: hooverjason  2023-04-21  High     
+Workout intensity trend for user: hooverjason  2023-06-08  Low      
+Workout intensity trend for user: hooverjason  2023-06-17  Low      
+Workout intensity trend for user: hooverjason  2023-06-20  Medium   
+Workout intensity trend for user: hooverjason  2023-07-05  High     
+Workout intensity trend for user: hooverjason  2023-07-28  High     
+Workout intensity trend for user: hooverjason  2023-09-12  Medium   
+Workout intensity trend for user: hooverjason  2023-09-27  Low      
+Workout intensity trend for user: icollins     2022-12-14  High     
+Workout intensity trend for user: icollins     2022-12-17  High     
+Workout intensity trend for user: icollins     2022-12-27  Medium   
+Workout intensity trend for user: icollins     2023-03-05  High     
+Workout intensity trend for user: icollins     2023-03-15  Medium   
+Workout intensity trend for user: icollins     2023-03-29  Medium   
+Workout intensity trend for user: icollins     2023-04-17  High     
+Workout intensity trend for user: icollins     2023-04-25  Medium   
+Workout intensity trend for user: icollins     2023-06-07  Medium   
+Workout intensity trend for user: icollins     2023-06-12  Medium   
+Workout intensity trend for user: icollins     2023-06-27  Medium   
+Workout intensity trend for user: icollins     2023-07-18  Low      
+Workout intensity trend for user: icollins     2023-07-25  Low      
+Workout intensity trend for user: icollins     2023-07-25  Low      
+Workout intensity trend for user: icollins     2023-09-16  Low      
+Workout intensity trend for user: icollins     2023-09-17  High     
+Workout intensity trend for user: icollins     2023-10-06  High     
+Workout intensity trend for user: icollins     2023-11-05  High     
+Workout intensity trend for user: jack52       2022-11-26  Medium   
+Workout intensity trend for user: jack52       2023-01-07  Medium   
+Workout intensity trend for user: jack52       2023-01-08  High     
+Workout intensity trend for user: jack52       2023-01-22  High     
+Workout intensity trend for user: jack52       2023-04-22  Low      
+Workout intensity trend for user: jack52       2023-05-27  Low      
+Workout intensity trend for user: jack52       2023-07-01  Low      
+Workout intensity trend for user: jack52       2023-07-08  Low      
+Workout intensity trend for user: jack52       2023-08-07  Medium   
+Workout intensity trend for user: jack52       2023-08-29  High     
+Workout intensity trend for user: jack52       2023-09-27  Low      
+Workout intensity trend for user: jack52       2023-09-30  Low      
+Workout intensity trend for user: jeremy87     2022-11-27  Medium   
+Workout intensity trend for user: jeremy87     2022-12-17  High     
+Workout intensity trend for user: jeremy87     2022-12-26  Medium   
+Workout intensity trend for user: jeremy87     2022-12-31  High     
+Workout intensity trend for user: jeremy87     2023-01-05  High     
+Workout intensity trend for user: jeremy87     2023-01-06  High     
+Workout intensity trend for user: jeremy87     2023-05-02  Medium   
+Workout intensity trend for user: jeremy87     2023-05-26  Medium   
+Workout intensity trend for user: jeremy87     2023-06-15  Low      
+Workout intensity trend for user: jeremy87     2023-06-28  Low      
+Workout intensity trend for user: jeremy87     2023-08-12  Low      
+Workout intensity trend for user: jeremy87     2023-09-07  High     
+Workout intensity trend for user: jeremy87     2023-10-01  Low      
+Workout intensity trend for user: jeremy87     2023-11-03  Low      
+Workout intensity trend for user: jeremy87     2023-11-05  Medium   
+Workout intensity trend for user: jeremy87     2023-11-06  Low      
+Workout intensity trend for user: jonesthomas  2022-12-21  High     
+Workout intensity trend for user: jonesthomas  2023-03-01  Low      
+Workout intensity trend for user: jonesthomas  2023-03-30  Low      
+Workout intensity trend for user: jonesthomas  2023-04-18  Medium   
+Workout intensity trend for user: jonesthomas  2023-07-01  Medium   
+Workout intensity trend for user: jonesthomas  2023-08-22  Medium   
+Workout intensity trend for user: jonesthomas  2023-11-01  Low      
+Workout intensity trend for user: lewissamuel  2022-11-17  Medium   
+Workout intensity trend for user: lewissamuel  2022-11-26  Medium   
+Workout intensity trend for user: lewissamuel  2022-12-25  Medium   
+Workout intensity trend for user: lewissamuel  2022-12-26  Medium   
+Workout intensity trend for user: lewissamuel  2023-01-03  Low      
+Workout intensity trend for user: lewissamuel  2023-01-04  Low      
+Workout intensity trend for user: lewissamuel  2023-01-29  Medium   
+Workout intensity trend for user: lewissamuel  2023-03-04  High     
+Workout intensity trend for user: lewissamuel  2023-03-06  High     
+Workout intensity trend for user: lewissamuel  2023-03-21  High     
+Workout intensity trend for user: lewissamuel  2023-04-12  High     
+Workout intensity trend for user: lewissamuel  2023-04-15  High     
+Workout intensity trend for user: lewissamuel  2023-04-28  Medium   
+Workout intensity trend for user: lewissamuel  2023-05-06  Low      
+Workout intensity trend for user: lewissamuel  2023-07-13  Low      
+Workout intensity trend for user: lewissamuel  2023-08-04  High     
+Workout intensity trend for user: lewissamuel  2023-09-03  Low      
+Workout intensity trend for user: lewissamuel  2023-10-12  Low      
+Workout intensity trend for user: william54    2022-11-08  High     
+Workout intensity trend for user: william54    2022-11-10  Low      
+Workout intensity trend for user: william54    2022-11-29  High     
+Workout intensity trend for user: william54    2022-12-01  Medium   
+Workout intensity trend for user: william54    2022-12-12  Low      
+Workout intensity trend for user: william54    2023-01-05  High     
+Workout intensity trend for user: william54    2023-01-09  Medium   
+Workout intensity trend for user: william54    2023-01-10  High     
+Workout intensity trend for user: william54    2023-03-17  Medium   
+Workout intensity trend for user: william54    2023-03-18  Low      
+Workout intensity trend for user: william54    2023-04-09  Low      
+Workout intensity trend for user: william54    2023-04-20  Low      
+Workout intensity trend for user: william54    2023-04-23  Low      
+Workout intensity trend for user: william54    2023-05-07  Medium   
+Workout intensity trend for user: william54    2023-06-15  Low      
+Workout intensity trend for user: william54    2023-09-04  Medium   
+Workout intensity trend for user: william54    2023-09-06  Low      
+Workout intensity trend for user: william54    2023-09-27  Medium   
+Workout intensity trend for user: william54    2023-10-16  Medium   
+Workout intensity trend for user: wluna        2022-11-11  Medium   
+Workout intensity trend for user: wluna        2023-01-01  High     
+Workout intensity trend for user: wluna        2023-01-02  Medium   
+Workout intensity trend for user: wluna        2023-01-06  Low      
+Workout intensity trend for user: wluna        2023-01-14  High     
+Workout intensity trend for user: wluna        2023-01-31  High     
+Workout intensity trend for user: wluna        2023-03-02  High     
+Workout intensity trend for user: wluna        2023-03-11  Medium   
+Workout intensity trend for user: wluna        2023-05-10  High     
+Workout intensity trend for user: wluna        2023-05-10  High     
+Workout intensity trend for user: wluna        2023-07-26  High     
+Workout intensity trend for user: wluna        2023-08-07  High     
+Workout intensity trend for user: wluna        2023-08-24  High     
+Workout intensity trend for user: wluna        2023-10-14  Medium   
+Workout intensity trend for user: wluna        2023-11-02  Medium   
+question                                             blood_pressure
+---------------------------------------------------  --------------
+Latest blood pressure reading for user: JaneDoe      115/75        
+Latest blood pressure reading for user: JaneDoe      115/75        
+Latest blood pressure reading for user: deborahwood  133/90        
+Latest blood pressure reading for user: donald43     108/69        
+Latest blood pressure reading for user: hooverjason  106/90        
+Latest blood pressure reading for user: icollins     112/76        
+Latest blood pressure reading for user: jack52       139/87        
+Latest blood pressure reading for user: jeremy87     137/60        
+Latest blood pressure reading for user: jonesthomas  119/69        
+Latest blood pressure reading for user: lewissamuel  138/88        
+Latest blood pressure reading for user: william54    119/60        
+Latest blood pressure reading for user: wluna        130/76        
