@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, Session
 from faker import Faker
 from datetime import datetime
 from tqdm import tqdm
@@ -25,7 +25,7 @@ Base.metadata.create_all(engine)  # Create tables based on the models
 Session = sessionmaker(bind=engine)
 
 
-def create_fake_data_orm(num_users: int = 10) -> NoReturn:
+def create_fake_data_orm(session: Session, num_users: int = 10) -> NoReturn:
     """
     Populates the database with fake data for the number of users specified.
 
@@ -35,8 +35,6 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
     Returns:
     NoReturn
     """
-    # Instantiate a session
-    session = Session()
 
     # Generate fake users
     for _ in tqdm(range(num_users), desc="Creating Users"):
@@ -143,4 +141,6 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
 
 
 if __name__ == "__main__":
-    create_fake_data_orm(10)
+    # Instantiate a session
+    session = Session()
+    create_fake_data_orm(session, 10)

@@ -124,6 +124,14 @@ python3 insert_data.py              # Insert the data
 python3 query_data.py               # Run the queries
 ```
 
+To run unit tests on the python files:
+
+```bash
+cd python_version
+coverage run -m unittest discover
+coverage report
+```
+
 ### SQLite Version
 
 To run the SQLite version of the app, open the SQLite command-line tool in the directory where your SQL files are located and execute the following commands:
