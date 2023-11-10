@@ -140,7 +140,5 @@ def create_fake_data_orm(session: Session, num_users: int = 10) -> NoReturn:
     session.close()
 
 
-if __name__ == "__main__":
-    # Instantiate a session
-    session = Session()
-    create_fake_data_orm(session, 10)
+session = Session()
+create_fake_data_orm(session, 10)
