@@ -284,6 +284,9 @@ Average caloric intake per meal for user: lewissamuel  247.833333333333
 question                                  day_of_week  workout_count
 ----------------------------------------  -----------  -------------
 Day of the week with the most workouts:   6            28           
+question                                        username  min_variation
+----------------------------------------------  --------  -------------
+User with the most consistent sleep schedule:   JaneDoe   0.0          
 question                                                      personal_best_calories
 ------------------------------------------------------------  ----------------------
 Personal best for calories burned in a workout by user: jere  698                   

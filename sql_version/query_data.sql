@@ -113,13 +113,26 @@ LIMIT 1;
 
 -- Question: Determine the user with the most consistent sleep schedule (least variation in sleep duration).
 SELECT 'User with the most consistent sleep schedule: ' AS question,
-       u.username, 
-       MIN(ABS(AVG(s.sleep_duration) - s.sleep_duration)) AS min_variation
-FROM sleep AS s
-JOIN users AS u ON s.user_id = u.id
-GROUP BY u.username
+       u.username,
+       MIN(variation) AS min_variation
+FROM (
+    SELECT s.user_id,
+           s.date,
+           s.sleep_duration,
+           user_avg.avg_sleep_duration,
+           ABS(s.sleep_duration - user_avg.avg_sleep_duration) AS variation
+    FROM sleep AS s
+    JOIN (
+        SELECT user_id, AVG(sleep_duration) AS avg_sleep_duration
+        FROM sleep
+        GROUP BY user_id
+    ) AS user_avg ON s.user_id = user_avg.user_id
+) AS sleep_variation
+JOIN users AS u ON sleep_variation.user_id = u.id
+GROUP BY sleep_variation.user_id
 ORDER BY min_variation ASC
 LIMIT 1;
+
 
 -- Question: List the personal best for calories burned in a single workout session by each user.
 SELECT 'Personal best for calories burned in a workout by user: ' || u.username AS question,

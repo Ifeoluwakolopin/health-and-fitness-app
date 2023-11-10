@@ -10,9 +10,9 @@ from sqlalchemy import (
     ForeignKey,
     JSON,
 )
-from sqlalchemy.orm import declarative_base
-from sqlalchemy.orm import relationship, session
+from sqlalchemy.orm import declarative_base, relationship
 
+engine = create_engine("sqlite:///health_fitness_tracking.db")
 Base = declarative_base()
 
 
@@ -35,7 +35,7 @@ class User(Base):
 
     # Instance method to add a workout log for the user
     def log_workout(
-        self, date, time, workout_type, duration, intensity, calories_burned
+        self, session, date, time, workout_type, duration, intensity, calories_burned
     ):
         new_workout = Workout(
             user_id=self.id,
@@ -47,10 +47,11 @@ class User(Base):
             calories_burned=calories_burned,
         )
         session.add(new_workout)
-        session.commit()
 
     # Instance method to record a nutrition log for the user
-    def record_nutrition(self, date, time, food_item, quantity, calories, macros):
+    def record_nutrition(
+        self, session, date, time, food_item, quantity, calories, macros
+    ):
         new_nutrition = Nutrition(
             user_id=self.id,
             date=date,
@@ -61,10 +62,11 @@ class User(Base):
             macros=macros,
         )
         session.add(new_nutrition)
-        session.commit()
 
     # Instance method to enter sleep data for the user
-    def enter_sleep_data(self, date, sleep_duration, sleep_quality, wake_times):
+    def enter_sleep_data(
+        self, session, date, sleep_duration, sleep_quality, wake_times
+    ):
         new_sleep = Sleep(
             user_id=self.id,
             date=date,
@@ -73,11 +75,10 @@ class User(Base):
             wake_times=wake_times,
         )
         session.add(new_sleep)
-        session.commit()
 
     # Instance method to add a health metric for the user
     def add_health_metric(
-        self, date, time, heart_rate, blood_pressure, blood_sugar, cholesterol
+        self, session, date, time, heart_rate, blood_pressure, blood_sugar, cholesterol
     ):
         new_health_metric = HealthMetric(
             user_id=self.id,
@@ -89,7 +90,6 @@ class User(Base):
             cholesterol=cholesterol,
         )
         session.add(new_health_metric)
-        session.commit()
 
 
 class Workout(Base):
@@ -149,10 +149,6 @@ class HealthMetric(Base):
 
     user = relationship("User", back_populates="health_metrics")
 
-
-# Create an engine that stores data in the local directory's
-# health_fitness_tracking.db file.
-engine = create_engine("sqlite:///health_fitness_tracking.db")
 
 # Create all tables in the engine. This is equivalent to "Create Table"
 # statements in raw SQL.

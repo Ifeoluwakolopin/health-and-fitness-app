@@ -1,13 +1,19 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from faker import Faker
+from datetime import datetime
 from tqdm import tqdm
 import random
 import json
 from typing import NoReturn
-
-# Assuming 'create.py' contains the declarative base and the User class definition
-from create import User, Base  # Import Base for metadata
+from create import (
+    User,
+    Workout,
+    Nutrition,
+    Sleep,
+    HealthMetric,
+    Base,
+)  # Import all required models
 
 fake = Faker()
 
@@ -31,12 +37,12 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
     """
     # Instantiate a session
     session = Session()
-    users = []
 
     # Generate fake users
     for _ in tqdm(range(num_users), desc="Creating Users"):
+        username = fake.user_name()
         user = User(
-            username=fake.user_name(),
+            username=username,
             age=random.randint(18, 80),
             gender=random.choice(["Male", "Female", "Non-binary"]),
             height=round(random.uniform(150.0, 200.0), 2),
@@ -46,18 +52,20 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
                 ["None", "Diabetes", "Hypertension", "Asthma"]
             ),
         )
-        users.append(user)
-
-    # Add all users to the session and commit
-    session.add_all(users)
+        session.add(user)
     session.commit()
+
+    users = session.query(User).all()
 
     for user in tqdm(users, desc="Populating Data for Users"):
         # Workouts
         for _ in range(random.randint(5, 20)):
-            user.log_workout(
+            time_str = fake.time()
+            time_obj = datetime.strptime(time_str, "%H:%M:%S").time()
+            workout = Workout(
+                user_id=user.id,
                 date=fake.date_between(start_date="-1y", end_date="today"),
-                time=fake.time(),
+                time=time_obj,
                 workout_type=fake.word(
                     ext_word_list=[
                         "Running",
@@ -71,12 +79,17 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
                 intensity=random.choice(["Low", "Medium", "High"]),
                 calories_burned=random.randint(100, 700),
             )
+            session.add(workout)
+        session.commit()
 
         # Nutrition logs
         for _ in range(random.randint(10, 30)):
-            user.record_nutrition(
+            time_str = fake.time()
+            time_obj = datetime.strptime(time_str, "%H:%M:%S").time()
+            nutrition = Nutrition(
+                user_id=user.id,
                 date=fake.date_between(start_date="-1y", end_date="today"),
-                time=fake.time(),
+                time=time_obj,
                 food_item=fake.word(
                     ext_word_list=[
                         "Salad",
@@ -95,26 +108,39 @@ def create_fake_data_orm(num_users: int = 10) -> NoReturn:
                     }
                 ),
             )
+            session.add(nutrition)
+        session.commit()
 
         # Sleep records
         for _ in range(random.randint(50, 100)):
-            user.enter_sleep_data(
+            sleep = Sleep(
+                user_id=user.id,
                 date=fake.date_between(start_date="-1y", end_date="today"),
                 sleep_duration=random.randint(300, 480),
                 sleep_quality=random.randint(1, 10),
                 wake_times=random.randint(0, 5),
             )
+            session.add(sleep)
+        session.commit()
 
         # Health metrics
         for _ in range(random.randint(10, 30)):
-            user.add_health_metric(
+            time_str = fake.time()
+            time_obj = datetime.strptime(time_str, "%H:%M:%S").time()
+            health_metric = HealthMetric(
+                user_id=user.id,
                 date=fake.date_between(start_date="-1y", end_date="today"),
-                time=fake.time(),
+                time=time_obj,
                 heart_rate=random.randint(60, 100),
                 blood_pressure=f"{random.randint(100, 140)}/{random.randint(60, 90)}",
                 blood_sugar=random.randint(70, 140),
                 cholesterol=random.randint(100, 200),
             )
+            session.add(health_metric)
+        session.commit()
+
+    session.close()
 
 
-create_fake_data_orm(10)
+if __name__ == "__main__":
+    create_fake_data_orm(10)
